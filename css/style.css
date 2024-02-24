@@ -40,11 +40,11 @@
         padding-top: 8px;
       }
       
-      .left_block {
+      .left_block, .right_block {
         width: 70%;
         padding-left: 40px;
       }
-      
+
       .logo {
         display: flex;
         top:0;
@@ -53,23 +53,24 @@
         width: 30%;
         height: 90vh;
       }
-      .taplist_block {
+      .taplist_block, .menu_block {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         margin-top: 40px;
       }
-      .tap_block {
+
+      .tap_block, .menu_item_block {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         height: 20%;
       }
-      .tap_block_info {
+      .tap_block_info, .menu_item_block_info {
         display: flex;
         flex-direction: column;
       }
-      .tap_block_price {
+      .tap_block_price, .menu_item_block_price {
         display: flex;
         flex-direction: column;
         align-items: center;
