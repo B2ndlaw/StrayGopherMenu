@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <title>Меню "Бродячего Суслика"</title>
+    
+  </head>
+    <div class="container">
+      <div class="left_block">
+        <div class="title_block">
+          <span class="title_text">КРАНЫ</span>
+        </div>
+        <div class="taplist_block">
+          <div class="tap_block">
+            <div class="tap_block_info">
+              <span id="beer_1_name" class="title_text"></span>
+              <span id="beer_1_info" class="secondary_text"></span>
+            </div>
+            <div class="tap_block_price">
+              <span id="beer_1_price" class="title_text"></span>
+              <span id="beer_1_size" class="secondary_text"></span>
+            </div>
+          </div>
+          <div class="tap_block">
+            <div class="tap_block_info">
+              <span id="beer_2_name" class="title_text"></span>
+              <span id="beer_2_info" class="secondary_text"></span>
+            </div>
+            <div class="tap_block_price">
+              <span id="beer_2_price" class="title_text"></span>
+              <span id="beer_2_size" class="secondary_text"></span>
+            </div>
+          </div>
+          <div class="tap_block">
+            <div class="tap_block_info">
+              <span id="beer_3_name" class="title_text"></span>
+              <span id="beer_3_info" class="secondary_text"></span>
+            </div>
+            <div class="tap_block_price">
+              <span id="beer_3_price" class="title_text"></span>
+              <span id="beer_3_size" class="secondary_text"></span>
+            </div>
+          </div>
+          <div class="tap_block">
+            <div class="tap_block_info">
+              <span id="beer_4_name" class="title_text"></span>
+              <span id="beer_4_info" class="secondary_text"></span>
+            </div>
+            <div class="tap_block_price">
+              <span id="beer_4_price" class="title_text"></span>
+              <span id="beer_4_size" class="secondary_text"></span>
+            </div>
+          </div>
+          <div class="tap_block">
+            <div class="tap_block_info">
+              <span id="beer_5_name" class="title_text"></span>
+              <span id="beer_5_info" class="secondary_text"></span>
+            </div>
+            <div class="tap_block_price">
+              <span id="beer_5_price" class="title_text"></span>
+              <span id="beer_5_size" class="secondary_text"></span>
+            </div>
+          </div>
+          <div class="tap_block">
+            <div class="tap_block_info">
+              <span id="beer_6_name" class="title_text"></span>
+              <span id="beer_6_info" class="secondary_text"></span>
+            </div>
+            <div class="tap_block_price">
+              <span id="beer_6_price" class="title_text"></span>
+              <span id="beer_6_size" class="secondary_text"></span>
+            </div>
+          </div>
+          <div class="tap_block">
+            <div class="tap_block_info">
+              <span id="beer_7_name" class="title_text"></span>
+              <span id="beer_7_info" class="secondary_text"></span>
+            </div>
+            <div class="tap_block_price">
+              <span id="beer_7_price" class="title_text"></span>
+              <span id="beer_7_size" class="secondary_text"></span>
+            </div>
+          </div>
+          <div class="tap_block">
+            <div class="tap_block_info">
+              <span id="beer_8_name" class="title_text"></span>
+              <span id="beer_8_info" class="secondary_text"></span>
+            </div>
+            <div class="tap_block_price">
+              <span id="beer_8_price" class="title_text"></span>
+              <span id="beer_8_size" class="secondary_text"></span>
+            </div>
+          </div>
+        </div>
+        <div class="taplist_block" id="taplist_editor">
+          <div class="tap_block">
+            <div class="tap_block_info">
+              <input id="beer_1_name_input" class="title_text" type="text" />
+              <input
+                id="beer_1_info_input"
+                class="secondary_text"
+                type="text"
+              />
+            </div>
+            <div class="tap_block_price">
+              <input
+                id="beer_1_price_input"
+                class="title_text"
+                type="text"
+                style="width: 60%"
+              />
+              <input
+                id="beer_1_size_input"
+                class="secondary_text"
+                type="text"
+                style="width: 60%"
+              />
+            </div>
+          </div>
+          <div class="tap_block">
+            <div class="tap_block_info">
+              <input id="beer_2_name_input" class="title_text" type="text" />
+              <input
+                id="beer_2_info_input"
+                class="secondary_text"
+                type="text"
+              />
+            </div>
+            <div class="tap_block_price">
+              <input
+                id="beer_2_price_input"
+                class="title_text"
+                type="text"
+                style="width: 60%"
+              />
+              <input
+                id="beer_2_size_input"
+                class="secondary_text"
+                type="text"
+                style="width: 60%"
+              />
+            </div>
+          </div>
+          <div class="tap_block">
+            <div class="tap_block_info">
+              <input id="beer_3_name_input" class="title_text" type="text" />
+              <input
+                id="beer_3_info_input"
+                class="secondary_text"
+                type="text"
+              />
+            </div>
+            <div class="tap_block_price">
+              <input
+                id="beer_3_price_input"
+                class="title_text"
+                type="text"
+                style="width: 60%"
+              />
+              <input
+                id="beer_3_size_input"
+                class="secondary_text"
+                type="text"
+                style="width: 60%"
+              />
+            </div>
+          </div>
+          <div class="tap_block">
+            <div class="tap_block_info">
+              <input id="beer_4_name_input" class="title_text" type="text" />
+              <input
+                id="beer_4_info_input"
+                class="secondary_text"
+                type="text"
+              />
+            </div>
+            <div class="tap_block_price">
+              <input
+                id="beer_4_price_input"
+                class="title_text"
+                type="text"
+                style="width: 60%"
+              />
+              <input
+                id="beer_4_size_input"
+                class="secondary_text"
+                type="text"
+                style="width: 60%"
+              />
+            </div>
+          </div>
+          <div class="tap_block">
+            <div class="tap_block_info">
+              <input id="beer_5_name_input" class="title_text" type="text" />
+              <input
+                id="beer_5_info_input"
+                class="secondary_text"
+                type="text"
+              />
+            </div>
+            <div class="tap_block_price">
+              <input
+                id="beer_5_price_input"
+                class="title_text"
+                type="text"
+                style="width: 60%"
+              />
+              <input
+                id="beer_5_size_input"
+                class="secondary_text"
+                type="text"
+                style="width: 60%"
+              />
+            </div>
+          </div>
+          <div class="tap_block">
+            <div class="tap_block_info">
+              <input id="beer_6_name_input" class="title_text" type="text" />
+              <input
+                id="beer_6_info_input"
+                class="secondary_text"
+                type="text"
+              />
+            </div>
+            <div class="tap_block_price">
+              <input
+                id="beer_6_price_input"
+                class="title_text"
+                type="text"
+                style="width: 60%"
+              />
+              <input
+                id="beer_6_size_input"
+                class="secondary_text"
+                type="text"
+                style="width: 60%"
+              />
+            </div>
+          </div>
+          <div class="tap_block">
+            <div class="tap_block_info">
+              <input id="beer_7_name_input" class="title_text" type="text" />
+              <input
+                id="beer_7_info_input"
+                class="secondary_text"
+                type="text"
+              />
+            </div>
+            <div class="tap_block_price">
+              <input
+                id="beer_7_price_input"
+                class="title_text"
+                type="text"
+                style="width: 60%"
+              />
+              <input
+                id="beer_7_size_input"
+                class="secondary_text"
+                type="text"
+                style="width: 60%"
+              />
+            </div>
+          </div>
+          <div class="tap_block">
+            <div class="tap_block_info">
+              <input id="beer_8_name_input" class="title_text" type="text" />
+              <input
+                id="beer_8_info_input"
+                class="secondary_text"
+                type="text"
+              />
+            </div>
+            <div class="tap_block_price">
+              <input
+                id="beer_8_price_input"
+                class="title_text"
+                type="text"
+                style="width: 60%"
+              />
+              <input
+                id="beer_8_size_input"
+                class="secondary_text"
+                type="text"
+                style="width: 60%"
+              />
+            </div>
+          </div>
+          <button style="height: 80px" onclick="save_taplist()">
+            Сохранить
+          </button>
+        </div>
+      </div>
+<!--Draft-->
+      <div class="logo">
+        <img
+          width="200"
+          height="200"
+          src="img/logo.png"
+          onclick="edit_taplist()">
+      </div>
+<!--Logo-->
+
+<div class="left_block">
+  <div class="title_block">
+    <span class="title_text">КРАНЫ</span>
+  </div>
+  <div class="taplist_block">
+    <div class="tap_block">
+      <div class="tap_block_info">
+        <span id="beer_1_name" class="title_text"></span>
+        <span id="beer_1_info" class="secondary_text"></span>
+      </div>
+      <div class="tap_block_price">
+        <span id="beer_1_price" class="title_text"></span>
+        <span id="beer_1_size" class="secondary_text"></span>
+      </div>
+    </div>
+    <div class="tap_block">
+      <div class="tap_block_info">
+        <span id="beer_2_name" class="title_text"></span>
+        <span id="beer_2_info" class="secondary_text"></span>
+      </div>
+      <div class="tap_block_price">
+        <span id="beer_2_price" class="title_text"></span>
+        <span id="beer_2_size" class="secondary_text"></span>
+      </div>
+    </div>
+    <div class="tap_block">
+      <div class="tap_block_info">
+        <span id="beer_3_name" class="title_text"></span>
+        <span id="beer_3_info" class="secondary_text"></span>
+      </div>
+      <div class="tap_block_price">
+        <span id="beer_3_price" class="title_text"></span>
+        <span id="beer_3_size" class="secondary_text"></span>
+      </div>
+    </div>
+    <div class="tap_block">
+      <div class="tap_block_info">
+        <span id="beer_4_name" class="title_text"></span>
+        <span id="beer_4_info" class="secondary_text"></span>
+      </div>
+      <div class="tap_block_price">
+        <span id="beer_4_price" class="title_text"></span>
+        <span id="beer_4_size" class="secondary_text"></span>
+      </div>
+    </div>
+    <div class="tap_block">
+      <div class="tap_block_info">
+        <span id="beer_5_name" class="title_text"></span>
+        <span id="beer_5_info" class="secondary_text"></span>
+      </div>
+      <div class="tap_block_price">
+        <span id="beer_5_price" class="title_text"></span>
+        <span id="beer_5_size" class="secondary_text"></span>
+      </div>
+    </div>
+    <div class="tap_block">
+      <div class="tap_block_info">
+        <span id="beer_6_name" class="title_text"></span>
+        <span id="beer_6_info" class="secondary_text"></span>
+      </div>
+      <div class="tap_block_price">
+        <span id="beer_6_price" class="title_text"></span>
+        <span id="beer_6_size" class="secondary_text"></span>
+      </div>
+    </div>
+    <div class="tap_block">
+      <div class="tap_block_info">
+        <span id="beer_7_name" class="title_text"></span>
+        <span id="beer_7_info" class="secondary_text"></span>
+      </div>
+      <div class="tap_block_price">
+        <span id="beer_7_price" class="title_text"></span>
+        <span id="beer_7_size" class="secondary_text"></span>
+      </div>
+    </div>
+    <div class="tap_block">
+      <div class="tap_block_info">
+        <span id="beer_8_name" class="title_text"></span>
+        <span id="beer_8_info" class="secondary_text"></span>
+      </div>
+      <div class="tap_block_price">
+        <span id="beer_8_price" class="title_text"></span>
+        <span id="beer_8_size" class="secondary_text"></span>
+      </div>
+    </div>
+  </div>
+  <div class="taplist_block" id="taplist_editor">
+    <div class="tap_block">
+      <div class="tap_block_info">
+        <input id="beer_1_name_input" class="title_text" type="text" />
+        <input
+          id="beer_1_info_input"
+          class="secondary_text"
+          type="text"
+        />
+      </div>
+      <div class="tap_block_price">
+        <input
+          id="beer_1_price_input"
+          class="title_text"
+          type="text"
+          style="width: 60%"
+        />
+        <input
+          id="beer_1_size_input"
+          class="secondary_text"
+          type="text"
+          style="width: 60%"
+        />
+      </div>
+    </div>
+    <div class="tap_block">
+      <div class="tap_block_info">
+        <input id="beer_2_name_input" class="title_text" type="text" />
+        <input
+          id="beer_2_info_input"
+          class="secondary_text"
+          type="text"
+        />
+      </div>
+      <div class="tap_block_price">
+        <input
+          id="beer_2_price_input"
+          class="title_text"
+          type="text"
+          style="width: 60%"
+        />
+        <input
+          id="beer_2_size_input"
+          class="secondary_text"
+          type="text"
+          style="width: 60%"
+        />
+      </div>
+    </div>
+    <div class="tap_block">
+      <div class="tap_block_info">
+        <input id="beer_3_name_input" class="title_text" type="text" />
+        <input
+          id="beer_3_info_input"
+          class="secondary_text"
+          type="text"
+        />
+      </div>
+      <div class="tap_block_price">
+        <input
+          id="beer_3_price_input"
+          class="title_text"
+          type="text"
+          style="width: 60%"
+        />
+        <input
+          id="beer_3_size_input"
+          class="secondary_text"
+          type="text"
+          style="width: 60%"
+        />
+      </div>
+    </div>
+    <div class="tap_block">
+      <div class="tap_block_info">
+        <input id="beer_4_name_input" class="title_text" type="text" />
+        <input
+          id="beer_4_info_input"
+          class="secondary_text"
+          type="text"
+        />
+      </div>
+      <div class="tap_block_price">
+        <input
+          id="beer_4_price_input"
+          class="title_text"
+          type="text"
+          style="width: 60%"
+        />
+        <input
+          id="beer_4_size_input"
+          class="secondary_text"
+          type="text"
+          style="width: 60%"
+        />
+      </div>
+    </div>
+    <div class="tap_block">
+      <div class="tap_block_info">
+        <input id="beer_5_name_input" class="title_text" type="text" />
+        <input
+          id="beer_5_info_input"
+          class="secondary_text"
+          type="text"
+        />
+      </div>
+      <div class="tap_block_price">
+        <input
+          id="beer_5_price_input"
+          class="title_text"
+          type="text"
+          style="width: 60%"
+        />
+        <input
+          id="beer_5_size_input"
+          class="secondary_text"
+          type="text"
+          style="width: 60%"
+        />
+      </div>
+    </div>
+    <div class="tap_block">
+      <div class="tap_block_info">
+        <input id="beer_6_name_input" class="title_text" type="text" />
+        <input
+          id="beer_6_info_input"
+          class="secondary_text"
+          type="text"
+        />
+      </div>
+      <div class="tap_block_price">
+        <input
+          id="beer_6_price_input"
+          class="title_text"
+          type="text"
+          style="width: 60%"
+        />
+        <input
+          id="beer_6_size_input"
+          class="secondary_text"
+          type="text"
+          style="width: 60%"
+        />
+      </div>
+    </div>
+    <div class="tap_block">
+      <div class="tap_block_info">
+        <input id="beer_7_name_input" class="title_text" type="text" />
+        <input
+          id="beer_7_info_input"
+          class="secondary_text"
+          type="text"
+        />
+      </div>
+      <div class="tap_block_price">
+        <input
+          id="beer_7_price_input"
+          class="title_text"
+          type="text"
+          style="width: 60%"
+        />
+        <input
+          id="beer_7_size_input"
+          class="secondary_text"
+          type="text"
+          style="width: 60%"
+        />
+      </div>
+    </div>
+    <div class="tap_block">
+      <div class="tap_block_info">
+        <input id="beer_8_name_input" class="title_text" type="text" />
+        <input
+          id="beer_8_info_input"
+          class="secondary_text"
+          type="text"
+        />
+      </div>
+      <div class="tap_block_price">
+        <input
+          id="beer_8_price_input"
+          class="title_text"
+          type="text"
+          style="width: 60%"
+        />
+        <input
+          id="beer_8_size_input"
+          class="secondary_text"
+          type="text"
+          style="width: 60%"
+        />
+      </div>
+    </div>
+    <button style="height: 80px" onclick="save_taplist()">
+      Сохранить
+    </button>
+  </div>
+</div>
+    </div> <!--Container-->
+  </body>
+</html>
