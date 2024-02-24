@@ -287,7 +287,8 @@
               />
             </div>
           </div>
-          <button style="height: 80px" onclick="save_taplist()">
+          
+          <button class="button" id="button_taplist" style="height: 80px" onclick="save_taplist()">
             Сохранить
           </button>
         </div>
@@ -295,10 +296,10 @@
 <!--Draft-->
       <div class="logo">
         <img
-          width="200"
-          height="200"
+          width="100"
+          height="100"
           src="img/logo.png"
-          onclick="edit_taplist()">
+          onclick="edit_taplist(); edit_menu()">
       </div>
 <!--Logo-->
 
@@ -581,7 +582,8 @@
         />
       </div>
     </div>
-    <button style="height: 80px" onclick="save_taplist()">
+    <!--Menu-->
+    <button class="button" id="button_menu" style="height: 80px" onclick="save_menu()">
       Сохранить
     </button>
   </div>
